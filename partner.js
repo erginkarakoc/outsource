@@ -1,4 +1,3 @@
-
 (function(){var startTime=Date.now();})();function insIsLocalStorageSupported(){var insider='insider';try{localStorage.setItem(insider,insider);localStorage.removeItem(insider);return true;}catch(e){return false;}}
 if(!insIsLocalStorageSupported()&&typeof console.log!=='undefined'){console.log('LocalStorage Support is not supported. API will not initialize.');}
 else if(spApi===undefined){var spApi={};spApi.loadScript=function(url,callback){var script=document.createElement('script')
